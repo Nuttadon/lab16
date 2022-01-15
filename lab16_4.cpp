@@ -24,10 +24,11 @@ void shuffle(int &i,int &j,int &k,int &l){
 	for(int n=4;n>0;n--){
 		gach=rand()%n+ct;
 		swap(con[gach],con[ct]);
-		ct++;
+	ct++;
 	}
 	i=con[0];
 	j=con[1];
 	k=con[2];
 	l=con[3];
+
 }
