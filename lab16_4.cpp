@@ -17,3 +17,17 @@ int main(){
 	
 	return 0;
 }
+
+void shuffle(int &i,int &j,int &k,int &l){
+	int gach,ct=0;
+	int con[]={i,j,k,l};
+	for(int n=4;n>0;n--){
+		gach=rand()%n+ct;
+		swap(con[gach],con[ct]);
+		ct++;
+	}
+	i=con[0];
+	j=con[1];
+	k=con[2];
+	l=con[3];
+}
